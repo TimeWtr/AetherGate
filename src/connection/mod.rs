@@ -1,13 +1,14 @@
+mod buffer_pool;
+mod id;
 mod manager;
+mod quic;
 mod stream;
 mod tcp;
 mod udp;
-mod quic;
 mod websocket;
-mod buffer_pool;
-mod id;
 
-
+#[allow(dead_code)]
+#[derive(Debug)]
 pub struct ConnectionConfig {
     pub max_connections: usize,
     pub connection_timeout_secs: u64,
