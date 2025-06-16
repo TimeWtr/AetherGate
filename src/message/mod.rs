@@ -1,2 +1,2 @@
-mod pipeline;
 mod batch;
+mod pipeline;

@@ -1,2 +1,2 @@
-mod local_store;
 mod distributed;
+mod local_store;

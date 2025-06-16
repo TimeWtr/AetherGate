@@ -1,2 +1,2 @@
-mod codec;
 mod adapter;
+mod codec;
