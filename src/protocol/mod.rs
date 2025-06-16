@@ -1,15 +1,18 @@
 mod adapter;
 mod codec;
 
-
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[allow(dead_code)]
 pub enum ProtocolType {
-    TCP,
-    UDP,
-    HTTP,
-    WEBSOCKET,
-    QUIC,
+    Tcp,
+    Udp,
+    Http,
+    Websocket,
+    Quic,
 }
+
+#[allow(dead_code)]
 trait Protocol {
-    fn Send(&self, data: &[u8]) -> Result<(), String>;
-    fn Receive(&self) -> Result<Vec<&u8>, String>;
+    fn send(&self, data: &[u8]) -> Result<(), String>;
+    fn receive(&self) -> Result<Vec<&u8>, String>;
 }
