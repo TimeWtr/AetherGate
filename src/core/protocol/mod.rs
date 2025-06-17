@@ -1,5 +1,7 @@
 mod adapter;
 mod codec;
+mod fb_codec;
+mod pb_codec;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[allow(dead_code)]

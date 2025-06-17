@@ -1,1 +1,2 @@
 mod checksum;
+mod memory;
