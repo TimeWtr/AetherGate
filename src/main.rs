@@ -1,10 +1,7 @@
-mod connection;
+mod core;
 mod errorx;
-mod message;
 mod metrics;
-mod protocol;
-mod router;
-mod session;
+mod plugins;
 mod utils;
 
 fn main() {
